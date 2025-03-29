@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/courses";
+const API_URL = "https://onlinereservationsystem.onrender.com/api/courses";
 
 const CourseService = {
   post(title, description, price) {
