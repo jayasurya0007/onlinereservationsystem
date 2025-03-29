@@ -26,10 +26,11 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://onlinereservationsystem.vercel.app",  // Replace with your frontend's Render URL
     credentials: true,
   })
 );
+
 
 
 app.use("/api/user", authRoute);
